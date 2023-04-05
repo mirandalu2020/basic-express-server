@@ -17,7 +17,7 @@ app.get('/person', validator, (req, res, next) => {
 });
 
 app.use(userErr);
-app.use('*', serverErr);
+app.use(serverErr);
 
 module.exports = {
   app,
